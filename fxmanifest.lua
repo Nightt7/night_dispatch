@@ -2,6 +2,8 @@ fx_version 'adamant'
 
 game 'gta5'
 
+description 'FiveM ESX Dispatch by Nightt#8899 (guillerp modification)'
+
 client_scripts {
     'client/*.lua'
 }
