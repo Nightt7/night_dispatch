@@ -5,16 +5,16 @@ $(function(){
     window.addEventListener("message", function(event){
         if (event.data.callnum) {
             if (event.data.callnum == 0) {
-                $("#text").html("Sin llamadas recibidas");
+                $("#text").text("No hay avisos entrantes.");
             }
             else if (event.data.content) {
-                $("#text").html(event.data.content + "");
+                $("#text").text(event.data.content + "");
                 alerts.push(event.data.content);
             }
-            $("#callnum").html(event.data.callnum + "");
+            $("#callnum").text(event.data.callnum + "");
         }
         if (event.data.totalcalls) {
-            $("#num").html(event.data.totalcalls + "");
+            $("#num").text(event.data.totalcalls + "");
         }
         if (event.data.show == true) {
             if($("#all").hasClass("cerrarMenu")){
@@ -146,10 +146,10 @@ $(function(){
             },2000);
         }
         if (event.data.restart == true) {
-            $("#callnum").html(0 + "/");
-            $("#num").html(0);
-            $("#text").html("Sin llamadas recibidas");
-            $(".alerts-table").html("");
+            $("#callnum").text(0 + "/");
+            $("#num").text(0);
+            $("#text").text("No hay avisos entrantes.");
+            $(".alerts-table").text("");
             
         }
         if (event.data.newambualert) {
@@ -270,7 +270,7 @@ $(function(){
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    $("#text").html("Sin llamadas recibidas");
+    $("#text").text("No hay avisos entrantes.");
     var selector = document.getElementById("all")
     selector.style = "display:none;"
     var contextmenu = document.getElementById("menu")

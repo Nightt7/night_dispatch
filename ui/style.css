@@ -1,6 +1,6 @@
 @font-face{
-	font-family: BoxedRound;
-	src: url("https://cdn.discordapp.com/attachments/886714318471712798/896824121164451900/BoxedRound.ttf");
+	font-family: nfont;
+	src: url("https://cdn.discordapp.com/attachments/839958624340148314/974776017325551646/Garet-Book.ttf");
 }
 
 #all {
@@ -37,7 +37,8 @@ body {
 }
 
 .cabecera {
-	font-family: BoxedRound;
+	font-family: nfont;
+    font-weight: 600;
     font-size: 1vw;
     color: rgb(255, 255, 255);
     z-index: 2 !important;
@@ -45,16 +46,17 @@ body {
 
 .titulo{
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
-	background-color: #ff0052;
-    border-radius: 3px;
-    font-size: 16px;
+	background-color: #4061a8;
+    border-radius: 5px;
+    font-size: .8vw;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px black;
     z-index: 2 !important;
-    padding: .2vw;
+    padding: -1vw;  
+    text-align: center;
     position: absolute;
-    top: -1.50vw;
-    left: -0.1%;
+    top: -0.79vw;
+    left: 69.5%;
     width: 3.6vw;
 }
 
@@ -63,13 +65,12 @@ body {
     border-radius: 3px;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px black;
-    float: right;
-    height: 1vw;
-    font-size: 0.6vw;
-    position: absolute;
+    font-size: .7vw;
+    position: absolute !important;
     padding: 2px;
-    right: -240%;
-    top: 6.3vw;
+    right: 3%;
+    bottom: .020vw;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .n-avisos i {
@@ -77,25 +78,26 @@ body {
     font-size: 0.9vw;
     position: absolute !important;
     left: -170%;
-    top: .2vw;
+    bottom: .2vw;
 }
 
 .avisos {
-	background: rgba(0, 0, 0, 0.743);
+	background: rgba(0, 0, 0, 0.795);
     color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
     padding: .5vw;
-    height: 5vw;
+    min-height: 5vw;
+    height: auto;
     /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.822); */
-    border-radius: 3px;
-	font-family: BoxedRound;
+    border-radius: 5px;
+	font-family: nfont;
     z-index: 1;
-    font-size: 80%;
+    font-size: 75%;
 }
 
 .avisos a {
     color: white !important;
-	font-family: BoxedRound;
+	font-family: nfont;
 }
 
 .col {
@@ -134,16 +136,14 @@ body {
 }
 
 .controles {
-    border-radius: 3px;
-	background-color: #ff0052;
+	background-color: none;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px black;
-    box-shadow: 0 0 20px black;
     font-family: 'Quicksand', sans-serif;
-    margin-top: -7.25vw;
-    margin-left: 10vw;
-    font-size: 1.5vw;
-    width: 4vw;
+    margin-top: -1.35vw;
+    margin-left: 10.65vw;
+    font-size: 0.9vw;
+    width: 2vw;
     height: 1.2vw;
 }
 
@@ -280,7 +280,7 @@ body {
 }
 
 .t-menuclass {
-    font-family: BoxedRound;
+    font-family: nfont;
     position: absolute;
     width: 500px;
     min-height: 150px;
@@ -307,7 +307,7 @@ body {
     width: 500px;
     font-size: 25px;
     margin-top: 6px;
-	font-family: BoxedRound;
+	font-family: nfont;
     text-align: center;
 }
 
@@ -424,7 +424,7 @@ td {
     width: 400px;
     margin-left: 39px;
     z-index: 4;
-	font-family: BoxedRound;
+	font-family: nfont;
     border: 1.8px solid white;
     border-radius: 5px;
     color: rgb(255, 255, 255);
@@ -450,7 +450,7 @@ td {
 .table-id {
     text-align:left;
     z-index: 3;
-	font-family: BoxedRound;
+	font-family: nfont;
 
 }
 
@@ -481,7 +481,7 @@ td {
     font-display: center;
 
 
-	font-family: BoxedRound;
+	font-family: nfont;
     font-weight: 300;
     display:block;
 }
@@ -531,7 +531,7 @@ td {
     top: 0px;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-family: BoxedRound;
+    font-family: nfont;
     right: 0px;
     width: 100%;
     font-size: 14px;
@@ -553,7 +553,7 @@ td {
     top: 20px;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-family: BoxedRound;
+    font-family: nfont;
     right: 0px;
     width: 100%;
     font-size: 14px;
@@ -575,7 +575,7 @@ td {
     top: 60px;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-family: BoxedRound;
+    font-family: nfont;
     right: 0px;
     width: 100%;
     font-size: 14px;
@@ -607,7 +607,7 @@ hr {
     top: 80px;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-family: BoxedRound;
+    font-family: nfont;
     right: 0px;
     width: 100%;
     font-size: 11px;

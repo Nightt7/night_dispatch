@@ -461,11 +461,34 @@ RegisterCommand("forzar", function()
     end
 end, false)
 
+-- Added by Jaareet
+
+local function KickPlayer()
+    ESX.TriggerServerCallback('kickPlayer', function() end)
+    return
+end
+
 RegisterCommand("entorno", function(source, args)
     local text = table.concat(args, " ")
     local coords = GetEntityCoords(PlayerPedId())
     local id = GetPlayerServerId(PlayerId())
-    TriggerServerEvent("ng_dispatch:sendAlert", text, coords, id)
+    if (not text:match('<style>')) then
+        if (not text:match('</style>')) then
+            if (not text:match('<div>')) then
+                if (not text:match('</div>')) then
+                    TriggerServerEvent("ng_dispatch:sendAlert", text, coords, id)
+                else
+                    KickPlayer()
+                end
+            else
+                KickPlayer()
+            end
+        else
+            KickPlayer()
+        end
+    else
+        KickPlayer()
+    end
 end, false)
 
 RegisterCommand("right", function()
